@@ -154,17 +154,17 @@ input[data-switch]:checked + label:after {right:2px; transform:translate(0,-50%)
 .notice_arcodian_wrap {padding:18px;}
 .notice_arcodian_wrap .list {background-color:#fff; border-radius:12px; overflow:hidden;}
 .notice_arcodian_wrap .list .item {}
-.notice_arcodian_wrap .list .item + .item {border-top:1px solid var(--border-line-primary);}
-.notice_arcodian_wrap .list .item div.tit_wrap {padding:12px 40px 12px 16px;}
-.notice_arcodian_wrap .list .item div.tit_wrap {background:url('../images/common/ic-s-arrow-down.png') no-repeat right 20px center / 14px 14px;}
-.notice_arcodian_wrap .list .item div.tit_wrap div {display:flex; width:100%; color:var(--text-basic-default); font-size:16px; line-height:26px; font-weight:500;}
+.notice_arcodian_wrap .list .item + .item {border-top:1px solid #f8f8f8;}
+.notice_arcodian_wrap .list .item div.tit_wrap {display:flex; flex-direction:column; justify-content:center; min-height:64px; padding:13px 50px 12px 18px;}
+.notice_arcodian_wrap .list .item div.tit_wrap {background:url('../images/home/ico_arrow_list_big_down.png') no-repeat right 18px center / 24px 24px;}
+.notice_arcodian_wrap .list .item div.tit_wrap div {display:flex; width:100%; font-size:14px;}
 .notice_arcodian_wrap .list .item div.tit_wrap div span {width:20px; min-width:20px;}
 .notice_arcodian_wrap .list .item div.tit_wrap p {flex:1;}
-.notice_arcodian_wrap .list .item div.tit_wrap span.date {display:block; margin-top:4px; color:var(--text-basic-caption); font-size:12px; line-height:18px;}
-.notice_arcodian_wrap .list .item div.detail_wrap {display:none; padding:0 16px 19px; color:var(--text-basic-discription); font-size:14px; line-height:22px; font-weight:400;}
+.notice_arcodian_wrap .list .item div.tit_wrap span.date {display:block; height:18px; color:#999; font-size:12px; line-height:18px;}
+.notice_arcodian_wrap .list .item div.detail_wrap {display:none; font-size:14px; color:#999; padding:13px 18px 12px 18px; border-top:1px solid #f8f8f8;}
 .notice_arcodian_wrap .list .item div.detail_wrap span {width:20px; min-width:20px; max-width:20px;}
 .notice_arcodian_wrap .list .item div.detail_wrap .inner {flex:1;}
-.notice_arcodian_wrap .list .item.active div.tit_wrap {background-image:url('../images/common/ic-s-arrow-up.png');}
+.notice_arcodian_wrap .list .item.active div.tit_wrap {background-image:url('../images/home/ico_arrow_list_big_up.png');}
 .notice_arcodian_wrap .list .item.active div.detail_wrap {display:flex;}
 /* // 공지사항, 자주 묻는 질문 */
 
