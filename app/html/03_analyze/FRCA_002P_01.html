@@ -128,7 +128,7 @@
 												<td>(최근 공모기업 평균 706:1)</td>
 											</tr>
 											<tr>
-												<th>주간사</th>
+												<th>주관사</th>
 												<td colspan="2">
 	
 													<ul class="lead_manager">
@@ -235,13 +235,22 @@
 <script src="../../js/temp.js"></script>
 
 <script>
-let lead_manager_btn = document.querySelectorAll("button");
-lead_manager_btn.forEach(function(item){
-	item.addEventListener("click", function(){
-		alert(item.innerText + " 앱 설치 연결, 따상 가즈아~");
+	let lead_manager_btn = document.querySelectorAll(".lead_manager button");
+	lead_manager_btn.forEach(function(item){
+		item.addEventListener("click", function(){
+			alert(item.innerText + " 앱 설치 연결, 따상 가즈아~");
+		})
 	})
-})
-</script>
+	
+	
+	let btnClose = document.querySelectorAll("button.btn_close");
+	btnClose.forEach(function(item){
+		item.addEventListener("click", function(){
+			alert("토스트 팝업 확인");
+			item.closest(".layer.toast").style.display = "none";
+		})
+	})
+	</script>
 
 </body>
 </html>
