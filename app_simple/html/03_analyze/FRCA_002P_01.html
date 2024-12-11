@@ -214,6 +214,16 @@
 
 
 
+<div class="layer toast">
+	<div class="inner">
+		<span class="ico"><img src="../../images/common/ico_fav_on.png" alt=""></span>
+		<p class="txt">관심종목에 추가되었어요</p>
+		<button type="button" class="btn_close"><span>확인</span></button>
+	</div>
+</div>
+<!-- // layer toast -->
+
+
 
 
 
@@ -224,10 +234,19 @@
 <script src="../../js/temp.js"></script>
 
 <script>
-let lead_manager_btn = document.querySelectorAll("button");
+let lead_manager_btn = document.querySelectorAll(".lead_manager button");
 lead_manager_btn.forEach(function(item){
 	item.addEventListener("click", function(){
 		alert(item.innerText + " 앱 설치 연결, 따상 가즈아~");
+	})
+})
+
+
+let btnClose = document.querySelectorAll("button.btn_close");
+btnClose.forEach(function(item){
+	item.addEventListener("click", function(){
+		alert("토스트 팝업 확인");
+		item.closest(".layer.toast").style.display = "none";
 	})
 })
 </script>

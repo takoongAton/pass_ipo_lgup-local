@@ -710,3 +710,14 @@ hr.line2 {display:block; height:1px; margin:0 20px; padding:0; border:0; backgro
 .notice_list .notice_item div.txt_wrap div.tit {color:var(--text-basic-default); font-size:14px; line-height:20px; font-weight:400;}
 .notice_list .notice_item div.txt_wrap div.txt {color:var(--text-basic-caption); font-size:12px; line-height:20px; font-weight:400;}
 /* // 알림 목록 */
+
+
+
+/* 알림 토스트 팝업 */
+.layer.toast {}
+.layer.toast div.inner {display:flex; align-items:center; gap:0 4px; position:fixed; right:1em; bottom:1em; left:1em; max-width:720px; margin:0 auto; padding:13px 18px; background-color:rgba(0,0,0,0.5); border-radius:6px; color:#fff;}
+.layer.toast div.inner span.ico {width:24px; height:24px;}
+.layer.toast div.inner p.txt {flex:1; color:#fff; font-size:14px; line-height:20px; text-align:left; text-shadow:0 0 1px rgba(0,0,0,0.5);}
+.layer.toast div.inner button.btn_close {width:62px; height:37px; border-radius:4px; background-color:#333; border-radius:6px; color:#fff;}
+.layer.toast div.inner button.btn_close span {display:block; color:#fff; font-size:14px; line-height:1em;}
+/* // 알림 토스트 팝업 */

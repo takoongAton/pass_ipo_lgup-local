@@ -561,3 +561,14 @@ div.ipo_item_list {background-color:#fff; border-radius:6px; overflow:hidden; bo
 100% {top:32.14285%; left:38.88888%; width:43.88888%; border-radius:8px; box-shadow:0 3px 6px rgba(0,0,0,0.16); opacity:1;}
 }
 /* // 이용안내 */
+
+
+
+/* 알림 토스트 팝업 */
+.layer.toast {}
+.layer.toast div.inner {display:flex; align-items:center; gap:0 4px; position:fixed; right:1em; bottom:1em; left:1em; max-width:720px; margin:0 auto; padding:13px 18px; background-color:rgba(0,0,0,0.5); border-radius:6px; color:#fff;}
+.layer.toast div.inner span.ico {width:24px; height:24px;}
+.layer.toast div.inner p.txt {flex:1; color:#fff; font-size:14px; line-height:20px; text-align:left; text-shadow:0 0 1px rgba(0,0,0,0.5);}
+.layer.toast div.inner button.btn_close {width:62px; height:37px; border-radius:4px; background-color:#333; border-radius:6px; color:#fff;}
+.layer.toast div.inner button.btn_close span {display:block; color:#fff; font-size:14px; line-height:1em;}
+/* // 알림 토스트 팝업 */
